@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Shop Laptops, Headphones, & More</title>
+    <meta name="description" content="A responsive, premium Amazon clone featuring the latest gadgets and fashion.">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo border">
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+            </div>
+            <div class="nav-address border">
+                <p class="deliver-to">Deliver to</p>
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="country">India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-fill">
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <button class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-language border">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="IN" class="flag">
+                <span>EN</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="nav-returns border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-counter">0</span>
+                Cart
+            </div>
+        </div>
+    </header>
+
+    <!-- Sub-navigation Panel -->
+    <nav class="panel">
+        <div class="panel-all border" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <a href="#" class="border">Customer Service</a>
+            <a href="#" class="border">Gift Cards</a>
+            <a href="#" class="border">Today's Sales</a>
+            <a href="#" class="border">Sell</a>
+        </div>
+        <div class="panel-deals border">
+            Shop great deals now
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <img src="assets/banner.png" alt="Hero Banner" class="hero-image">
+            <div class="hero-msg">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+            </div>
+        </section>
+
+        <!-- Shop Section (Product Grid) -->
+        <section class="shop-section">
+            
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Premium Laptops</h2>
+                    <div class="product-image-container">
+                        <img src="assets/laptop.png" alt="Premium Laptop">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>1,07,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <span class="reviews">4,521</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Noise-Cancelling Headphones</h2>
+                    <div class="product-image-container">
+                        <img src="assets/headphones.png" alt="Wireless Headphones">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>24,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="reviews">12,893</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Smart Home Devices</h2>
+                    <div class="grid-images">
+                        <div class="grid-item">
+                            <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&q=80&w=200" alt="Smart Speaker">
+                            <p>Speakers</p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?auto=format&fit=crop&q=80&w=200" alt="Smart Watch">
+                            <p>Watches</p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="https://images.unsplash.com/photo-1584006682522-dc17d6c0d9ac?auto=format&fit=crop&q=80&w=200" alt="Smart Display">
+                            <p>Displays</p>
+                        </div>
+                        <div class="grid-item">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=200" alt="Smart Plug">
+                            <p>Plugs</p>
+                        </div>
+                    </div>
+                    <a href="#" class="shop-link">See more</a>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Electronics & Accessories</h2>
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&q=80&w=600" alt="Electronics">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>7,499<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="reviews">2,104</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Mirrorless Digital Camera</h2>
+                    <div class="product-image-container">
+                        <img src="assets/camera.png" alt="Digital Camera">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>74,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <span class="reviews">876</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Premium Smartwatch</h2>
+                    <div class="product-image-container">
+                        <img src="assets/smartwatch.png" alt="Smartwatch">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>28,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="reviews">3,209</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Gaming Consoles</h2>
+                    <div class="product-image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png" alt="Gaming Console">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>41,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="reviews">14,930</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <div class="card-content">
+                    <h2>Fitness Tracker</h2>
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&q=80&w=600" alt="Fitness Tracker">
+                    </div>
+                    <p class="price"><span class="currency">₹</span>10,990<span class="fraction">00</span></p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="reviews">6,120</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                    <a href="#" class="shop-link">Shop now</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="foot-panel1">
+            Back to top
+        </div>
+        
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="#">Sell products on Amazon</a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a href="#">Amazon Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & Policies</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Manage Your Content and Devices</a>
+                <a href="#">Help</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo">
+                <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+            </div>
+        </div>
+        
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2026, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
